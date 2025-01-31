@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f454878d3d8a6098756c1b6b565b5c3e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f454878d3d8a6098756c1b6b565b5c3e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f454878d3d8a6098756c1b6b565b5c3e = L.map(
+                "map_f454878d3d8a6098756c1b6b565b5c3e",
+                {
+                    center: [43.20020957632353, 5.778341334029412],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a312c7875a57f5a82ef82167f9a03840 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri, Maxar, Earthstar Geographics", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var marker_97ab6368fab76c819f171e8329bb4865 = L.marker(
+                [43.179418552, 5.809755609],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_be03d40e9cced29889fe4e672b4d52c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97ab6368fab76c819f171e8329bb4865.setIcon(icon_be03d40e9cced29889fe4e672b4d52c9);
+        
+    
+        var popup_c485235835a88a0140e9561562922fea = L.popup({"maxWidth": 300});
+
+        
+            var html_9088b6e690e87808ad144475c7bda92c = $(`<div id="html_9088b6e690e87808ad144475c7bda92c" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AM0352<br>     <b>Date de vente:</b> 2021-01-15 00:00:00<br>     <b>Prix de vente:</b> 78000 €<br>     <b>Prix au m²:</b> 23 €/m²<br>     <b>Superficie totale:</b> 3320 m²     </div>`)[0];
+            popup_c485235835a88a0140e9561562922fea.setContent(html_9088b6e690e87808ad144475c7bda92c);
+        
+
+        marker_97ab6368fab76c819f171e8329bb4865.bindPopup(popup_c485235835a88a0140e9561562922fea)
+        ;
+
+        
+    
+    
+            marker_97ab6368fab76c819f171e8329bb4865.bindTooltip(
+                `<div>
+                     83016000AM0352
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d0c94554c6be1f016d7f9efbb16c276 = L.marker(
+                [43.190185183, 5.763551495],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_55e5ca69916c0c07cbc8a66131283eb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d0c94554c6be1f016d7f9efbb16c276.setIcon(icon_55e5ca69916c0c07cbc8a66131283eb1);
+        
+    
+        var popup_ffaa4663fa3e028bbc753ac27c688b6d = L.popup({"maxWidth": 300});
+
+        
+            var html_1353be341cd1aa63f93b44dc51464113 = $(`<div id="html_1353be341cd1aa63f93b44dc51464113" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000B0035<br>     <b>Date de vente:</b> 2023-05-24 00:00:00<br>     <b>Prix de vente:</b> 50000 €<br>     <b>Prix au m²:</b> 18 €/m²<br>     <b>Superficie totale:</b> 2820 m²     </div>`)[0];
+            popup_ffaa4663fa3e028bbc753ac27c688b6d.setContent(html_1353be341cd1aa63f93b44dc51464113);
+        
+
+        marker_8d0c94554c6be1f016d7f9efbb16c276.bindPopup(popup_ffaa4663fa3e028bbc753ac27c688b6d)
+        ;
+
+        
+    
+    
+            marker_8d0c94554c6be1f016d7f9efbb16c276.bindTooltip(
+                `<div>
+                     830270000B0035
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c8620474f55fb281ce293d58742c840 = L.marker(
+                [43.190836279, 5.83147475],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_84f1dffe526a58585a72263896ca5045 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c8620474f55fb281ce293d58742c840.setIcon(icon_84f1dffe526a58585a72263896ca5045);
+        
+    
+        var popup_1ca52b2f4d4ed609b44ed55e45dbd974 = L.popup({"maxWidth": 300});
+
+        
+            var html_4389e760cdd52127c78fec26594ea14b = $(`<div id="html_4389e760cdd52127c78fec26594ea14b" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AE0055,83016000AE0893<br>     <b>Date de vente:</b> 2022-06-13 00:00:00<br>     <b>Prix de vente:</b> 82500 €<br>     <b>Prix au m²:</b> 18 €/m²<br>     <b>Superficie totale:</b> 4693 m²     </div>`)[0];
+            popup_1ca52b2f4d4ed609b44ed55e45dbd974.setContent(html_4389e760cdd52127c78fec26594ea14b);
+        
+
+        marker_0c8620474f55fb281ce293d58742c840.bindPopup(popup_1ca52b2f4d4ed609b44ed55e45dbd974)
+        ;
+
+        
+    
+    
+            marker_0c8620474f55fb281ce293d58742c840.bindTooltip(
+                `<div>
+                     83016000AE0055,83016000AE0893
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49557d4ac010859d98bcccfd0490f12c = L.marker(
+                [43.179579994, 5.769153051],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_069c1d3199be7d8c2e18bf83d1d9aaf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49557d4ac010859d98bcccfd0490f12c.setIcon(icon_069c1d3199be7d8c2e18bf83d1d9aaf7);
+        
+    
+        var popup_df0387f3ce91194ad7d971d23ff66b04 = L.popup({"maxWidth": 300});
+
+        
+            var html_acb4120c10d42cf80a7e50f382fa9e90 = $(`<div id="html_acb4120c10d42cf80a7e50f382fa9e90" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83035000AH0272,83035000AH0273,83035000AH0323,83035000AH0325,83035000AH0327,83035000AH0329,83035000AH0331<br>     <b>Date de vente:</b> 2023-09-06 00:00:00<br>     <b>Prix de vente:</b> 100000 €<br>     <b>Prix au m²:</b> 16 €/m²<br>     <b>Superficie totale:</b> 6356 m²     </div>`)[0];
+            popup_df0387f3ce91194ad7d971d23ff66b04.setContent(html_acb4120c10d42cf80a7e50f382fa9e90);
+        
+
+        marker_49557d4ac010859d98bcccfd0490f12c.bindPopup(popup_df0387f3ce91194ad7d971d23ff66b04)
+        ;
+
+        
+    
+    
+            marker_49557d4ac010859d98bcccfd0490f12c.bindTooltip(
+                `<div>
+                     83035000AH0272,83035000AH0273,83035000AH0323,83035000AH0325,83035000AH0327,83035000AH0329,83035000AH0331
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35a64ed0fcdcfe21786238ed9ab42d81 = L.marker(
+                [43.218016088, 5.76152113],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_2a98bfcffa58509400da51ec42ec114d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35a64ed0fcdcfe21786238ed9ab42d81.setIcon(icon_2a98bfcffa58509400da51ec42ec114d);
+        
+    
+        var popup_5d3970fce8b90ce0336395a38954a772 = L.popup({"maxWidth": 300});
+
+        
+            var html_0edeaee502dbccf3c0f61259f808c056 = $(`<div id="html_0edeaee502dbccf3c0f61259f808c056" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B0325,830350000B1402,830350000B1403<br>     <b>Date de vente:</b> 2023-09-21 00:00:00<br>     <b>Prix de vente:</b> 278430 €<br>     <b>Prix au m²:</b> 15 €/m²<br>     <b>Superficie totale:</b> 18562 m²     </div>`)[0];
+            popup_5d3970fce8b90ce0336395a38954a772.setContent(html_0edeaee502dbccf3c0f61259f808c056);
+        
+
+        marker_35a64ed0fcdcfe21786238ed9ab42d81.bindPopup(popup_5d3970fce8b90ce0336395a38954a772)
+        ;
+
+        
+    
+    
+            marker_35a64ed0fcdcfe21786238ed9ab42d81.bindTooltip(
+                `<div>
+                     830350000B0325,830350000B1402,830350000B1403
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dabd50174bd09cf79dca0a3c50b0ee39 = L.marker(
+                [43.212152057, 5.761279026],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_65f93c48b383aa60bcdc27fc60e2a7e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dabd50174bd09cf79dca0a3c50b0ee39.setIcon(icon_65f93c48b383aa60bcdc27fc60e2a7e2);
+        
+    
+        var popup_83ed39247e9540162850168a60c72924 = L.popup({"maxWidth": 300});
+
+        
+            var html_7da563a04f2b28166055936e1afcc920 = $(`<div id="html_7da563a04f2b28166055936e1afcc920" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B0723,830350000B0724<br>     <b>Date de vente:</b> 2020-10-16 00:00:00<br>     <b>Prix de vente:</b> 319290 €<br>     <b>Prix au m²:</b> 15 €/m²<br>     <b>Superficie totale:</b> 22020 m²     </div>`)[0];
+            popup_83ed39247e9540162850168a60c72924.setContent(html_7da563a04f2b28166055936e1afcc920);
+        
+
+        marker_dabd50174bd09cf79dca0a3c50b0ee39.bindPopup(popup_83ed39247e9540162850168a60c72924)
+        ;
+
+        
+    
+    
+            marker_dabd50174bd09cf79dca0a3c50b0ee39.bindTooltip(
+                `<div>
+                     830350000B0723,830350000B0724
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4655b1feeaaae36cae4a0f3cd4e58434 = L.marker(
+                [43.218387635, 5.809167868],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_f7e1a0b3a6bd082f5b0f959bb3fc3a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4655b1feeaaae36cae4a0f3cd4e58434.setIcon(icon_f7e1a0b3a6bd082f5b0f959bb3fc3a20);
+        
+    
+        var popup_a06749995d9006e2c09f4bf330188a49 = L.popup({"maxWidth": 300});
+
+        
+            var html_31ebe1574cadeddb7cab264e86395754 = $(`<div id="html_31ebe1574cadeddb7cab264e86395754" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830160000A0049,830160000A0154,830160000A0155<br>     <b>Date de vente:</b> 2021-07-28 00:00:00<br>     <b>Prix de vente:</b> 70000 €<br>     <b>Prix au m²:</b> 15 €/m²<br>     <b>Superficie totale:</b> 4820 m²     </div>`)[0];
+            popup_a06749995d9006e2c09f4bf330188a49.setContent(html_31ebe1574cadeddb7cab264e86395754);
+        
+
+        marker_4655b1feeaaae36cae4a0f3cd4e58434.bindPopup(popup_a06749995d9006e2c09f4bf330188a49)
+        ;
+
+        
+    
+    
+            marker_4655b1feeaaae36cae4a0f3cd4e58434.bindTooltip(
+                `<div>
+                     830160000A0049,830160000A0154,830160000A0155
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82e163021ae949e6a96c2f144ba5fd7b = L.marker(
+                [43.230133359, 5.77439565],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_da7483fe75c772541d612c880753b3bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82e163021ae949e6a96c2f144ba5fd7b.setIcon(icon_da7483fe75c772541d612c880753b3bf);
+        
+    
+        var popup_27c9ad9da277932d5a9b95c967b3ea61 = L.popup({"maxWidth": 300});
+
+        
+            var html_5653f8f218b8bc40ae505a4dd131e788 = $(`<div id="html_5653f8f218b8bc40ae505a4dd131e788" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000A1391<br>     <b>Date de vente:</b> 2022-12-05 00:00:00<br>     <b>Prix de vente:</b> 80000 €<br>     <b>Prix au m²:</b> 15 €/m²<br>     <b>Superficie totale:</b> 5380 m²     </div>`)[0];
+            popup_27c9ad9da277932d5a9b95c967b3ea61.setContent(html_5653f8f218b8bc40ae505a4dd131e788);
+        
+
+        marker_82e163021ae949e6a96c2f144ba5fd7b.bindPopup(popup_27c9ad9da277932d5a9b95c967b3ea61)
+        ;
+
+        
+    
+    
+            marker_82e163021ae949e6a96c2f144ba5fd7b.bindTooltip(
+                `<div>
+                     830350000A1391
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ed4ac5d14f01a5e90920963b6ca9fd8 = L.marker(
+                [43.222830491, 5.775093455],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_cc94ccafbc4f48a28e6b524bdb3f8fe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ed4ac5d14f01a5e90920963b6ca9fd8.setIcon(icon_cc94ccafbc4f48a28e6b524bdb3f8fe7);
+        
+    
+        var popup_0d3b280645a53b8d121b6dca04db980e = L.popup({"maxWidth": 300});
+
+        
+            var html_e055d2090c2c30c4984104e09ada6940 = $(`<div id="html_e055d2090c2c30c4984104e09ada6940" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000A3110<br>     <b>Date de vente:</b> 2022-10-07 00:00:00<br>     <b>Prix de vente:</b> 75000 €<br>     <b>Prix au m²:</b> 15 €/m²<br>     <b>Superficie totale:</b> 5153 m²     </div>`)[0];
+            popup_0d3b280645a53b8d121b6dca04db980e.setContent(html_e055d2090c2c30c4984104e09ada6940);
+        
+
+        marker_9ed4ac5d14f01a5e90920963b6ca9fd8.bindPopup(popup_0d3b280645a53b8d121b6dca04db980e)
+        ;
+
+        
+    
+    
+            marker_9ed4ac5d14f01a5e90920963b6ca9fd8.bindTooltip(
+                `<div>
+                     830350000A3110
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8da1645a635772bcebee65ff2af06cf3 = L.marker(
+                [43.226385504, 5.749694943],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_7d7dd5786bb07a6cef4196fe4818249d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8da1645a635772bcebee65ff2af06cf3.setIcon(icon_7d7dd5786bb07a6cef4196fe4818249d);
+        
+    
+        var popup_3ef6644b1d67edd2c46cb13112f8e238 = L.popup({"maxWidth": 300});
+
+        
+            var html_b45f878c71e8b359179b3ef7e5684a2d = $(`<div id="html_b45f878c71e8b359179b3ef7e5684a2d" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B0470,830350000B0484,830350000B0485<br>     <b>Date de vente:</b> 2022-11-30 00:00:00<br>     <b>Prix de vente:</b> 160000 €<br>     <b>Prix au m²:</b> 15 €/m²<br>     <b>Superficie totale:</b> 10350 m²     </div>`)[0];
+            popup_3ef6644b1d67edd2c46cb13112f8e238.setContent(html_b45f878c71e8b359179b3ef7e5684a2d);
+        
+
+        marker_8da1645a635772bcebee65ff2af06cf3.bindPopup(popup_3ef6644b1d67edd2c46cb13112f8e238)
+        ;
+
+        
+    
+    
+            marker_8da1645a635772bcebee65ff2af06cf3.bindTooltip(
+                `<div>
+                     830350000B0470,830350000B0484,830350000B0485
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9da9d41beed47a281366ce95bee229ce = L.marker(
+                [43.185905814, 5.773031681],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_6faa6b12363555bec29ef6644972085c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9da9d41beed47a281366ce95bee229ce.setIcon(icon_6faa6b12363555bec29ef6644972085c);
+        
+    
+        var popup_caa56fe2f0d45c305500e5e9349c7749 = L.popup({"maxWidth": 300});
+
+        
+            var html_fa756d3fae1e0a2a3d11341e0d2d2c3f = $(`<div id="html_fa756d3fae1e0a2a3d11341e0d2d2c3f" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000E2823<br>     <b>Date de vente:</b> 2020-01-28 00:00:00<br>     <b>Prix de vente:</b> 110000 €<br>     <b>Prix au m²:</b> 14 €/m²<br>     <b>Superficie totale:</b> 7811 m²     </div>`)[0];
+            popup_caa56fe2f0d45c305500e5e9349c7749.setContent(html_fa756d3fae1e0a2a3d11341e0d2d2c3f);
+        
+
+        marker_9da9d41beed47a281366ce95bee229ce.bindPopup(popup_caa56fe2f0d45c305500e5e9349c7749)
+        ;
+
+        
+    
+    
+            marker_9da9d41beed47a281366ce95bee229ce.bindTooltip(
+                `<div>
+                     830350000E2823
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07aaf779e306b15c5e0bf3bba640eb30 = L.marker(
+                [43.181315175, 5.76075172],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_9b6a3210ced46fcfe360bdab14f58625 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_07aaf779e306b15c5e0bf3bba640eb30.setIcon(icon_9b6a3210ced46fcfe360bdab14f58625);
+        
+    
+        var popup_91e48da1f2807ba1ea829154f4a122b3 = L.popup({"maxWidth": 300});
+
+        
+            var html_f823a94c7389304ea7a5c804f87c5fde = $(`<div id="html_f823a94c7389304ea7a5c804f87c5fde" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000B0151,830270000B0158,830270000B0159,830270000B0652<br>     <b>Date de vente:</b> 2023-12-12 00:00:00<br>     <b>Prix de vente:</b> 331646 €<br>     <b>Prix au m²:</b> 14 €/m²<br>     <b>Superficie totale:</b> 23689 m²     </div>`)[0];
+            popup_91e48da1f2807ba1ea829154f4a122b3.setContent(html_f823a94c7389304ea7a5c804f87c5fde);
+        
+
+        marker_07aaf779e306b15c5e0bf3bba640eb30.bindPopup(popup_91e48da1f2807ba1ea829154f4a122b3)
+        ;
+
+        
+    
+    
+            marker_07aaf779e306b15c5e0bf3bba640eb30.bindTooltip(
+                `<div>
+                     830270000B0151,830270000B0158,830270000B0159,830270000B0652
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cdc2b6b4119e5d6adebc90b05f1b0d8 = L.marker(
+                [43.199519705, 5.750969968],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_e8512f1f5a8723a573b3ca21a3cccbd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cdc2b6b4119e5d6adebc90b05f1b0d8.setIcon(icon_e8512f1f5a8723a573b3ca21a3cccbd0);
+        
+    
+        var popup_7b455ea0a5440449e82356fc98ab0c11 = L.popup({"maxWidth": 300});
+
+        
+            var html_ffc15e137f69c2d899e894357efa64c9 = $(`<div id="html_ffc15e137f69c2d899e894357efa64c9" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000D0082,830270000D0186,830270000H0170,830270000H0228,830270000H0260<br>     <b>Date de vente:</b> 2022-01-27 00:00:00<br>     <b>Prix de vente:</b> 300000 €<br>     <b>Prix au m²:</b> 14 €/m²<br>     <b>Superficie totale:</b> 22079 m²     </div>`)[0];
+            popup_7b455ea0a5440449e82356fc98ab0c11.setContent(html_ffc15e137f69c2d899e894357efa64c9);
+        
+
+        marker_8cdc2b6b4119e5d6adebc90b05f1b0d8.bindPopup(popup_7b455ea0a5440449e82356fc98ab0c11)
+        ;
+
+        
+    
+    
+            marker_8cdc2b6b4119e5d6adebc90b05f1b0d8.bindTooltip(
+                `<div>
+                     830270000D0082,830270000D0186,830270000H0170,830270000H0228,830270000H0260
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1821b5c43b41ef06016afc6f717d646d = L.marker(
+                [43.170893387, 5.807456861],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_89e35856783f7a0878c4fc89fe1d7d67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1821b5c43b41ef06016afc6f717d646d.setIcon(icon_89e35856783f7a0878c4fc89fe1d7d67);
+        
+    
+        var popup_70fbe9cc071b2c8d7d3670e6beba1646 = L.popup({"maxWidth": 300});
+
+        
+            var html_93e2b5fa7072aa721c1d8a2cbef6e1c3 = $(`<div id="html_93e2b5fa7072aa721c1d8a2cbef6e1c3" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830530000D0059<br>     <b>Date de vente:</b> 2022-08-05 00:00:00<br>     <b>Prix de vente:</b> 63800 €<br>     <b>Prix au m²:</b> 13 €/m²<br>     <b>Superficie totale:</b> 4940 m²     </div>`)[0];
+            popup_70fbe9cc071b2c8d7d3670e6beba1646.setContent(html_93e2b5fa7072aa721c1d8a2cbef6e1c3);
+        
+
+        marker_1821b5c43b41ef06016afc6f717d646d.bindPopup(popup_70fbe9cc071b2c8d7d3670e6beba1646)
+        ;
+
+        
+    
+    
+            marker_1821b5c43b41ef06016afc6f717d646d.bindTooltip(
+                `<div>
+                     830530000D0059
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_313801ab24cd9992e35205771966e4e8 = L.marker(
+                [43.196040629, 5.77382507],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_a548796638533b70617de2b46ea2e549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_313801ab24cd9992e35205771966e4e8.setIcon(icon_a548796638533b70617de2b46ea2e549);
+        
+    
+        var popup_d5c93c1d086a7d18cb1aff198c25911f = L.popup({"maxWidth": 300});
+
+        
+            var html_de52a8c72b8930dc0f630cefb0dbf800 = $(`<div id="html_de52a8c72b8930dc0f630cefb0dbf800" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000C0780,830350000C0781,830350000C0782,830350000C0786,830350000C0787<br>     <b>Date de vente:</b> 2024-06-19 00:00:00<br>     <b>Prix de vente:</b> 115000 €<br>     <b>Prix au m²:</b> 13 €/m²<br>     <b>Superficie totale:</b> 8773 m²     </div>`)[0];
+            popup_d5c93c1d086a7d18cb1aff198c25911f.setContent(html_de52a8c72b8930dc0f630cefb0dbf800);
+        
+
+        marker_313801ab24cd9992e35205771966e4e8.bindPopup(popup_d5c93c1d086a7d18cb1aff198c25911f)
+        ;
+
+        
+    
+    
+            marker_313801ab24cd9992e35205771966e4e8.bindTooltip(
+                `<div>
+                     830350000C0780,830350000C0781,830350000C0782,830350000C0786,830350000C0787
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95776e83848f787a7a52ec718f3d20c2 = L.marker(
+                [43.206410045, 5.768549167],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_2e513a463998c20d299301822b390fc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_95776e83848f787a7a52ec718f3d20c2.setIcon(icon_2e513a463998c20d299301822b390fc8);
+        
+    
+        var popup_040016a0f9c497e9ad19423e0053e584 = L.popup({"maxWidth": 300});
+
+        
+            var html_920f2dfe97a527376fd685272dd3cc5b = $(`<div id="html_920f2dfe97a527376fd685272dd3cc5b" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B0795,830350000B0806<br>     <b>Date de vente:</b> 2023-07-19 00:00:00<br>     <b>Prix de vente:</b> 90000 €<br>     <b>Prix au m²:</b> 13 €/m²<br>     <b>Superficie totale:</b> 6792 m²     </div>`)[0];
+            popup_040016a0f9c497e9ad19423e0053e584.setContent(html_920f2dfe97a527376fd685272dd3cc5b);
+        
+
+        marker_95776e83848f787a7a52ec718f3d20c2.bindPopup(popup_040016a0f9c497e9ad19423e0053e584)
+        ;
+
+        
+    
+    
+            marker_95776e83848f787a7a52ec718f3d20c2.bindTooltip(
+                `<div>
+                     830350000B0795,830350000B0806
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_417befae8e09049e011506aa12cdb295 = L.marker(
+                [43.213931441, 5.786714312],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_5de8b8f85d4d1412e4211734f97bd8f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_417befae8e09049e011506aa12cdb295.setIcon(icon_5de8b8f85d4d1412e4211734f97bd8f2);
+        
+    
+        var popup_c6f7d92a9ef1fc0bc3de08d058df81c5 = L.popup({"maxWidth": 300});
+
+        
+            var html_502706ccd2dc033803e2bdba8d421556 = $(`<div id="html_502706ccd2dc033803e2bdba8d421556" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000A0296,830350000A0831,830350000A0832,830350000A0833,830350000A0857<br>     <b>Date de vente:</b> 2023-07-10 00:00:00<br>     <b>Prix de vente:</b> 204581 €<br>     <b>Prix au m²:</b> 13 €/m²<br>     <b>Superficie totale:</b> 15737 m²     </div>`)[0];
+            popup_c6f7d92a9ef1fc0bc3de08d058df81c5.setContent(html_502706ccd2dc033803e2bdba8d421556);
+        
+
+        marker_417befae8e09049e011506aa12cdb295.bindPopup(popup_c6f7d92a9ef1fc0bc3de08d058df81c5)
+        ;
+
+        
+    
+    
+            marker_417befae8e09049e011506aa12cdb295.bindTooltip(
+                `<div>
+                     830350000A0296,830350000A0831,830350000A0832,830350000A0833,830350000A0857
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a44c3576fb7100453c2932755622671d = L.marker(
+                [43.222830491, 5.775093455],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_0b13f890b2bc04d75131376557f67629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a44c3576fb7100453c2932755622671d.setIcon(icon_0b13f890b2bc04d75131376557f67629);
+        
+    
+        var popup_e8939cd4f81af75affa4dcf558eee0d3 = L.popup({"maxWidth": 300});
+
+        
+            var html_e564d3397d846f9ed9363cb761ae1242 = $(`<div id="html_e564d3397d846f9ed9363cb761ae1242" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000A3110<br>     <b>Date de vente:</b> 2020-06-30 00:00:00<br>     <b>Prix de vente:</b> 65000 €<br>     <b>Prix au m²:</b> 13 €/m²<br>     <b>Superficie totale:</b> 5153 m²     </div>`)[0];
+            popup_e8939cd4f81af75affa4dcf558eee0d3.setContent(html_e564d3397d846f9ed9363cb761ae1242);
+        
+
+        marker_a44c3576fb7100453c2932755622671d.bindPopup(popup_e8939cd4f81af75affa4dcf558eee0d3)
+        ;
+
+        
+    
+    
+            marker_a44c3576fb7100453c2932755622671d.bindTooltip(
+                `<div>
+                     830350000A3110
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5548de4085fcae7f2946aa6dbb359cea = L.marker(
+                [43.186946904, 5.805846573],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_9e39187121e1cce1e042ffb0084a5979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5548de4085fcae7f2946aa6dbb359cea.setIcon(icon_9e39187121e1cce1e042ffb0084a5979);
+        
+    
+        var popup_7e08e6ceb8cb40d105b589eaddb1d9c5 = L.popup({"maxWidth": 300});
+
+        
+            var html_8143de2b6a3c2146d350f77d50dbdfc6 = $(`<div id="html_8143de2b6a3c2146d350f77d50dbdfc6" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AM0421,83016000AM0428<br>     <b>Date de vente:</b> 2021-08-18 00:00:00<br>     <b>Prix de vente:</b> 80000 €<br>     <b>Prix au m²:</b> 12 €/m²<br>     <b>Superficie totale:</b> 6740 m²     </div>`)[0];
+            popup_7e08e6ceb8cb40d105b589eaddb1d9c5.setContent(html_8143de2b6a3c2146d350f77d50dbdfc6);
+        
+
+        marker_5548de4085fcae7f2946aa6dbb359cea.bindPopup(popup_7e08e6ceb8cb40d105b589eaddb1d9c5)
+        ;
+
+        
+    
+    
+            marker_5548de4085fcae7f2946aa6dbb359cea.bindTooltip(
+                `<div>
+                     83016000AM0421,83016000AM0428
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c744c520df37d8335370df61958fafac = L.marker(
+                [43.18352822, 5.79076886],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_b3021b8cd9ae078f9d9c393749f295a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c744c520df37d8335370df61958fafac.setIcon(icon_b3021b8cd9ae078f9d9c393749f295a8);
+        
+    
+        var popup_1caa230af2eed63d131139a6910ed9ac = L.popup({"maxWidth": 300});
+
+        
+            var html_495f9c8f0fbe8414fb96eae6c0a81f73 = $(`<div id="html_495f9c8f0fbe8414fb96eae6c0a81f73" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000E0593,830350000E0594,830350000E0595,830350000E0596,830350000E0597,830350000E0598<br>     <b>Date de vente:</b> 2023-12-13 00:00:00<br>     <b>Prix de vente:</b> 130000 €<br>     <b>Prix au m²:</b> 12 €/m²<br>     <b>Superficie totale:</b> 10961 m²     </div>`)[0];
+            popup_1caa230af2eed63d131139a6910ed9ac.setContent(html_495f9c8f0fbe8414fb96eae6c0a81f73);
+        
+
+        marker_c744c520df37d8335370df61958fafac.bindPopup(popup_1caa230af2eed63d131139a6910ed9ac)
+        ;
+
+        
+    
+    
+            marker_c744c520df37d8335370df61958fafac.bindTooltip(
+                `<div>
+                     830350000E0593,830350000E0594,830350000E0595,830350000E0596,830350000E0597,830350000E0598
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dd7bf0786906e7c088df25059161d0f = L.marker(
+                [43.202904347, 5.751092762],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_111f65774a1118141ffadaf9eefe7a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9dd7bf0786906e7c088df25059161d0f.setIcon(icon_111f65774a1118141ffadaf9eefe7a4c);
+        
+    
+        var popup_deac364939928c60ff58cb8ac7e63c8c = L.popup({"maxWidth": 300});
+
+        
+            var html_f6606862ec131df8a549a62d9cf7df36 = $(`<div id="html_f6606862ec131df8a549a62d9cf7df36" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000H0149,830270000H0158,830270000H0159<br>     <b>Date de vente:</b> 2020-05-18 00:00:00<br>     <b>Prix de vente:</b> 600000 €<br>     <b>Prix au m²:</b> 12 €/m²<br>     <b>Superficie totale:</b> 48452 m²     </div>`)[0];
+            popup_deac364939928c60ff58cb8ac7e63c8c.setContent(html_f6606862ec131df8a549a62d9cf7df36);
+        
+
+        marker_9dd7bf0786906e7c088df25059161d0f.bindPopup(popup_deac364939928c60ff58cb8ac7e63c8c)
+        ;
+
+        
+    
+    
+            marker_9dd7bf0786906e7c088df25059161d0f.bindTooltip(
+                `<div>
+                     830270000H0149,830270000H0158,830270000H0159
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20fcc8878d2234bdb7482b5d0b024480 = L.marker(
+                [43.208165605, 5.772972963],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_514256825edc85272920a267d6d04750 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20fcc8878d2234bdb7482b5d0b024480.setIcon(icon_514256825edc85272920a267d6d04750);
+        
+    
+        var popup_2802e57a7c3aee0a39a80ea1e91773cb = L.popup({"maxWidth": 300});
+
+        
+            var html_497ddf1c462142e810f9950ba91a58b9 = $(`<div id="html_497ddf1c462142e810f9950ba91a58b9" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B1054,830350000B1055<br>     <b>Date de vente:</b> 2023-10-25 00:00:00<br>     <b>Prix de vente:</b> 78432 €<br>     <b>Prix au m²:</b> 12 €/m²<br>     <b>Superficie totale:</b> 6536 m²     </div>`)[0];
+            popup_2802e57a7c3aee0a39a80ea1e91773cb.setContent(html_497ddf1c462142e810f9950ba91a58b9);
+        
+
+        marker_20fcc8878d2234bdb7482b5d0b024480.bindPopup(popup_2802e57a7c3aee0a39a80ea1e91773cb)
+        ;
+
+        
+    
+    
+            marker_20fcc8878d2234bdb7482b5d0b024480.bindTooltip(
+                `<div>
+                     830350000B1054,830350000B1055
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3473c0b96bf46eedb7771e577e61840 = L.marker(
+                [43.174459514, 5.812180047],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_87f338eb43789bbd99e8ae514d2a40d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3473c0b96bf46eedb7771e577e61840.setIcon(icon_87f338eb43789bbd99e8ae514d2a40d7);
+        
+    
+        var popup_54b72ac4a731f67705f0a382613eb4c5 = L.popup({"maxWidth": 300});
+
+        
+            var html_5c7c8a61e3895e0f1637727cec1b8520 = $(`<div id="html_5c7c8a61e3895e0f1637727cec1b8520" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AH0061,83016000AH0065,83016000AH0066,83016000AH0068<br>     <b>Date de vente:</b> 2022-07-06 00:00:00<br>     <b>Prix de vente:</b> 72000 €<br>     <b>Prix au m²:</b> 11 €/m²<br>     <b>Superficie totale:</b> 6700 m²     </div>`)[0];
+            popup_54b72ac4a731f67705f0a382613eb4c5.setContent(html_5c7c8a61e3895e0f1637727cec1b8520);
+        
+
+        marker_b3473c0b96bf46eedb7771e577e61840.bindPopup(popup_54b72ac4a731f67705f0a382613eb4c5)
+        ;
+
+        
+    
+    
+            marker_b3473c0b96bf46eedb7771e577e61840.bindTooltip(
+                `<div>
+                     83016000AH0061,83016000AH0065,83016000AH0066,83016000AH0068
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0fd344fa192a22b8bf7714178162776 = L.marker(
+                [43.196040629, 5.77382507],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_cab937f990d4deef602009f73f77784d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0fd344fa192a22b8bf7714178162776.setIcon(icon_cab937f990d4deef602009f73f77784d);
+        
+    
+        var popup_a81b35d9a715d060c19cdd4f45672f9d = L.popup({"maxWidth": 300});
+
+        
+            var html_2fbe104d061a4ee1a595c591b44b9897 = $(`<div id="html_2fbe104d061a4ee1a595c591b44b9897" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000C0780,830350000C0781,830350000C0782,830350000C0786,830350000C0787<br>     <b>Date de vente:</b> 2024-02-09 00:00:00<br>     <b>Prix de vente:</b> 100000 €<br>     <b>Prix au m²:</b> 11 €/m²<br>     <b>Superficie totale:</b> 8773 m²     </div>`)[0];
+            popup_a81b35d9a715d060c19cdd4f45672f9d.setContent(html_2fbe104d061a4ee1a595c591b44b9897);
+        
+
+        marker_e0fd344fa192a22b8bf7714178162776.bindPopup(popup_a81b35d9a715d060c19cdd4f45672f9d)
+        ;
+
+        
+    
+    
+            marker_e0fd344fa192a22b8bf7714178162776.bindTooltip(
+                `<div>
+                     830350000C0780,830350000C0781,830350000C0782,830350000C0786,830350000C0787
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10046f1d8d34b74668295470cfa3a1c1 = L.marker(
+                [43.22295078, 5.74370943],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_d0ac5dcc82da3a7371d8dcf1a7d0ac74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10046f1d8d34b74668295470cfa3a1c1.setIcon(icon_d0ac5dcc82da3a7371d8dcf1a7d0ac74);
+        
+    
+        var popup_f843cdd80e8db2ea313e3ab57c415a56 = L.popup({"maxWidth": 300});
+
+        
+            var html_b35e4244ac7be76caeeb2e4be79c63d5 = $(`<div id="html_b35e4244ac7be76caeeb2e4be79c63d5" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000G1666,830270000G1667<br>     <b>Date de vente:</b> 2020-12-23 00:00:00<br>     <b>Prix de vente:</b> 630000 €<br>     <b>Prix au m²:</b> 11 €/m²<br>     <b>Superficie totale:</b> 59401 m²     </div>`)[0];
+            popup_f843cdd80e8db2ea313e3ab57c415a56.setContent(html_b35e4244ac7be76caeeb2e4be79c63d5);
+        
+
+        marker_10046f1d8d34b74668295470cfa3a1c1.bindPopup(popup_f843cdd80e8db2ea313e3ab57c415a56)
+        ;
+
+        
+    
+    
+            marker_10046f1d8d34b74668295470cfa3a1c1.bindTooltip(
+                `<div>
+                     830270000G1666,830270000G1667
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab8e7ee82cc45bb5089b93cf26dd6053 = L.marker(
+                [43.185893368, 5.743231078],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_0aacfbbd4281bc2bfdc92520043a8a05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab8e7ee82cc45bb5089b93cf26dd6053.setIcon(icon_0aacfbbd4281bc2bfdc92520043a8a05);
+        
+    
+        var popup_bb34603440db6d8f32e05fc2ed040e3b = L.popup({"maxWidth": 300});
+
+        
+            var html_31308e751c7bf51760f082e0d0277b3a = $(`<div id="html_31308e751c7bf51760f082e0d0277b3a" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000C0051<br>     <b>Date de vente:</b> 2023-08-03 00:00:00<br>     <b>Prix de vente:</b> 50000 €<br>     <b>Prix au m²:</b> 11 €/m²<br>     <b>Superficie totale:</b> 4480 m²     </div>`)[0];
+            popup_bb34603440db6d8f32e05fc2ed040e3b.setContent(html_31308e751c7bf51760f082e0d0277b3a);
+        
+
+        marker_ab8e7ee82cc45bb5089b93cf26dd6053.bindPopup(popup_bb34603440db6d8f32e05fc2ed040e3b)
+        ;
+
+        
+    
+    
+            marker_ab8e7ee82cc45bb5089b93cf26dd6053.bindTooltip(
+                `<div>
+                     830270000C0051
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd1ca1880bfd5d8fec6e66370d13fdd2 = L.marker(
+                [43.179928435, 5.830846835],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_736ed9657aa71e0b71ec307007152ff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd1ca1880bfd5d8fec6e66370d13fdd2.setIcon(icon_736ed9657aa71e0b71ec307007152ff1);
+        
+    
+        var popup_8ccec23bd423477e581f569997260da8 = L.popup({"maxWidth": 300});
+
+        
+            var html_e2403d26486f34c0b5ded55690a80226 = $(`<div id="html_e2403d26486f34c0b5ded55690a80226" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AE0453<br>     <b>Date de vente:</b> 2021-09-28 00:00:00<br>     <b>Prix de vente:</b> 62000 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 6403 m²     </div>`)[0];
+            popup_8ccec23bd423477e581f569997260da8.setContent(html_e2403d26486f34c0b5ded55690a80226);
+        
+
+        marker_bd1ca1880bfd5d8fec6e66370d13fdd2.bindPopup(popup_8ccec23bd423477e581f569997260da8)
+        ;
+
+        
+    
+    
+            marker_bd1ca1880bfd5d8fec6e66370d13fdd2.bindTooltip(
+                `<div>
+                     83016000AE0453
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d117336e7a256e0008f2fa8041e9c82 = L.marker(
+                [43.182269776, 5.823560659],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_3e032a00ebf5c39a4f0e8a938794ab84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4d117336e7a256e0008f2fa8041e9c82.setIcon(icon_3e032a00ebf5c39a4f0e8a938794ab84);
+        
+    
+        var popup_92a20bbb3e43a83db38d83f494de06c1 = L.popup({"maxWidth": 300});
+
+        
+            var html_9e21fada81a4c32d34f74c11743e72f0 = $(`<div id="html_9e21fada81a4c32d34f74c11743e72f0" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AE0314,83016000AE0315,83016000AE0316,83016000AE0698<br>     <b>Date de vente:</b> 2022-06-16 00:00:00<br>     <b>Prix de vente:</b> 165000 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 17367 m²     </div>`)[0];
+            popup_92a20bbb3e43a83db38d83f494de06c1.setContent(html_9e21fada81a4c32d34f74c11743e72f0);
+        
+
+        marker_4d117336e7a256e0008f2fa8041e9c82.bindPopup(popup_92a20bbb3e43a83db38d83f494de06c1)
+        ;
+
+        
+    
+    
+            marker_4d117336e7a256e0008f2fa8041e9c82.bindTooltip(
+                `<div>
+                     83016000AE0314,83016000AE0315,83016000AE0316,83016000AE0698
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_769b0b5f2f3ef20a671fb32ba541ea72 = L.marker(
+                [43.183177054, 5.80367664],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_aa87e574897f695ef190351fed1ba947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_769b0b5f2f3ef20a671fb32ba541ea72.setIcon(icon_aa87e574897f695ef190351fed1ba947);
+        
+    
+        var popup_167ec80c6d324e8e06909659a8826979 = L.popup({"maxWidth": 300});
+
+        
+            var html_d17bbb2ed061c3a2f07be042053f3deb = $(`<div id="html_d17bbb2ed061c3a2f07be042053f3deb" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83016000AL0208,83016000AL0210<br>     <b>Date de vente:</b> 2020-05-15 00:00:00<br>     <b>Prix de vente:</b> 98000 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 9560 m²     </div>`)[0];
+            popup_167ec80c6d324e8e06909659a8826979.setContent(html_d17bbb2ed061c3a2f07be042053f3deb);
+        
+
+        marker_769b0b5f2f3ef20a671fb32ba541ea72.bindPopup(popup_167ec80c6d324e8e06909659a8826979)
+        ;
+
+        
+    
+    
+            marker_769b0b5f2f3ef20a671fb32ba541ea72.bindTooltip(
+                `<div>
+                     83016000AL0208,83016000AL0210
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a555e45e73b6fb7ceda776089e4599b = L.marker(
+                [43.186185504, 5.785471078],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_d23b0c71c8e0a950a51ee5fd47902f60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a555e45e73b6fb7ceda776089e4599b.setIcon(icon_d23b0c71c8e0a950a51ee5fd47902f60);
+        
+    
+        var popup_c7078b03cda8c4bbcec1a0e91a9c8da4 = L.popup({"maxWidth": 300});
+
+        
+            var html_00195fb00bbc38670f533d383133625b = $(`<div id="html_00195fb00bbc38670f533d383133625b" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000E0223,830350000E3077<br>     <b>Date de vente:</b> 2022-01-06 00:00:00<br>     <b>Prix de vente:</b> 59300 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 6147 m²     </div>`)[0];
+            popup_c7078b03cda8c4bbcec1a0e91a9c8da4.setContent(html_00195fb00bbc38670f533d383133625b);
+        
+
+        marker_7a555e45e73b6fb7ceda776089e4599b.bindPopup(popup_c7078b03cda8c4bbcec1a0e91a9c8da4)
+        ;
+
+        
+    
+    
+            marker_7a555e45e73b6fb7ceda776089e4599b.bindTooltip(
+                `<div>
+                     830350000E0223,830350000E3077
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdae7fe2b8453ac1cb8acf6bf4556108 = L.marker(
+                [43.187528508, 5.762040905],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_0e89b97b9a916410556ea51bfc7925e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cdae7fe2b8453ac1cb8acf6bf4556108.setIcon(icon_0e89b97b9a916410556ea51bfc7925e0);
+        
+    
+        var popup_47e0fa8e1c5f0092e286af43a861be23 = L.popup({"maxWidth": 300});
+
+        
+            var html_eebe3c88c16c9bd2045b007f1ce19f0d = $(`<div id="html_eebe3c88c16c9bd2045b007f1ce19f0d" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830270000B1283,830350000E0554<br>     <b>Date de vente:</b> 2020-11-18 00:00:00<br>     <b>Prix de vente:</b> 225000 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 22791 m²     </div>`)[0];
+            popup_47e0fa8e1c5f0092e286af43a861be23.setContent(html_eebe3c88c16c9bd2045b007f1ce19f0d);
+        
+
+        marker_cdae7fe2b8453ac1cb8acf6bf4556108.bindPopup(popup_47e0fa8e1c5f0092e286af43a861be23)
+        ;
+
+        
+    
+    
+            marker_cdae7fe2b8453ac1cb8acf6bf4556108.bindTooltip(
+                `<div>
+                     830270000B1283,830350000E0554
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8884f999431c682e90e8d5265386553 = L.marker(
+                [43.226670805, 5.756589802],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_e630406b62d7cd8a2387c3f85049173f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8884f999431c682e90e8d5265386553.setIcon(icon_e630406b62d7cd8a2387c3f85049173f);
+        
+    
+        var popup_33cbc3dd078ada58273e9121ee5607b2 = L.popup({"maxWidth": 300});
+
+        
+            var html_7de41fc2a624e18345a4aeadb79fcbd7 = $(`<div id="html_7de41fc2a624e18345a4aeadb79fcbd7" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B0541<br>     <b>Date de vente:</b> 2020-08-28 00:00:00<br>     <b>Prix de vente:</b> 110000 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 10760 m²     </div>`)[0];
+            popup_33cbc3dd078ada58273e9121ee5607b2.setContent(html_7de41fc2a624e18345a4aeadb79fcbd7);
+        
+
+        marker_c8884f999431c682e90e8d5265386553.bindPopup(popup_33cbc3dd078ada58273e9121ee5607b2)
+        ;
+
+        
+    
+    
+            marker_c8884f999431c682e90e8d5265386553.bindTooltip(
+                `<div>
+                     830350000B0541
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dd67c72b432e26271393d8469033b1d = L.marker(
+                [43.231092021, 5.759420668],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_5e5ad330f8f780586241f320768ad3ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9dd67c72b432e26271393d8469033b1d.setIcon(icon_5e5ad330f8f780586241f320768ad3ae);
+        
+    
+        var popup_b8c3788a8e9502087cb08c203638f66f = L.popup({"maxWidth": 300});
+
+        
+            var html_8d4a1ac11a153526eb196ae71494901f = $(`<div id="html_8d4a1ac11a153526eb196ae71494901f" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 83035000AB0085,83035000AB0086,83035000AB0227<br>     <b>Date de vente:</b> 2024-04-18 00:00:00<br>     <b>Prix de vente:</b> 65000 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 6455 m²     </div>`)[0];
+            popup_b8c3788a8e9502087cb08c203638f66f.setContent(html_8d4a1ac11a153526eb196ae71494901f);
+        
+
+        marker_9dd67c72b432e26271393d8469033b1d.bindPopup(popup_b8c3788a8e9502087cb08c203638f66f)
+        ;
+
+        
+    
+    
+            marker_9dd67c72b432e26271393d8469033b1d.bindTooltip(
+                `<div>
+                     83035000AB0085,83035000AB0086,83035000AB0227
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33f9235483f8ec964ab8c53985fc7923 = L.marker(
+                [43.224612296, 5.746892776],
+                {}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+    
+            var icon_7439e43ea65260358a3b1ad8dfc77c87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33f9235483f8ec964ab8c53985fc7923.setIcon(icon_7439e43ea65260358a3b1ad8dfc77c87);
+        
+    
+        var popup_1c9967cb9d683b0cee0c0da50720b263 = L.popup({"maxWidth": 300});
+
+        
+            var html_0cea5d0600f7147af07e09fef9076166 = $(`<div id="html_0cea5d0600f7147af07e09fef9076166" style="width: 100.0%; height: 100.0%;">     <b>Références cadastrales:</b> 830350000B2344,830350000B2345,830350000B2370,830350000B2389,830350000B2390<br>     <b>Date de vente:</b> 2020-11-25 00:00:00<br>     <b>Prix de vente:</b> 91300 €<br>     <b>Prix au m²:</b> 10 €/m²<br>     <b>Superficie totale:</b> 9130 m²     </div>`)[0];
+            popup_1c9967cb9d683b0cee0c0da50720b263.setContent(html_0cea5d0600f7147af07e09fef9076166);
+        
+
+        marker_33f9235483f8ec964ab8c53985fc7923.bindPopup(popup_1c9967cb9d683b0cee0c0da50720b263)
+        ;
+
+        
+    
+    
+            marker_33f9235483f8ec964ab8c53985fc7923.bindTooltip(
+                `<div>
+                     830350000B2344,830350000B2345,830350000B2370,830350000B2389,830350000B2390
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_35cae151676893e9b3b8486adeb3036a = {
+                base_layers : {
+                    "Vue Satellite" : tile_layer_a312c7875a57f5a82ef82167f9a03840,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_35cae151676893e9b3b8486adeb3036a.base_layers,
+                layer_control_35cae151676893e9b3b8486adeb3036a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_f454878d3d8a6098756c1b6b565b5c3e);
+        
+</script>
+</html>
